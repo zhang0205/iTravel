@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color2"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+        <ImageButton
+            android:id="@+id/zhuce_back"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="26dp"
+            android:text="注册"
+            android:textColor="@color/color4"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_zcad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bound"
+            android:hint="输入昵称"
+            android:textColor="@color/colorPrimary"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/ed_zcps"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bound"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+            <Button
+                android:id="@+id/zhuce_sure"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="注册"
+                android:textColor="@color/color2"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:background="@drawable/new_title_1" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/zhuce1"
+            />
+    </FrameLayout>
+
+</LinearLayout>

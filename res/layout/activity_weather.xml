@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_title_1">
+        <ImageButton
+            android:id="@+id/id_back_week"
+            android:background="@drawable/new_title_1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/jindian_back"
+            android:layout_width="60dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/title_weather_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="天气预报"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/lvFutureWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:dividerHeight="10dp">
+    </ListView>
+
+</LinearLayout>

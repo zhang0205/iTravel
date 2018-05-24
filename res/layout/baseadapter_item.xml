@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="75dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/hotelName"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="黄山中瑞华艺精品酒店"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="汤口镇"
+            android:textColor="@android:color/black"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/price_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:text="价格:120元  类型:五星级"/>
+    </LinearLayout>
+</LinearLayout>

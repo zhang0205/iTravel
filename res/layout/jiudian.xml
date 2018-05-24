@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/white"
+            android:src="@drawable/back"
+            android:onClick="back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择目的地"
+            android:textColor="#2c2c2c"
+            android:textSize="23dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/white">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:id="@+id/search_edit"
+            android:background="@drawable/bound_edit"
+            android:textSize="20dp"
+            android:hint="输入城市"
+            android:textColorHint="#515151"
+            android:textCursorDrawable="@drawable/cursor"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bound_voice"
+            android:src="@drawable/voice"
+            android:id="@+id/voice"/>
+        <Button
+            android:id="@+id/search"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="搜索"
+            android:background="@android:color/white"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:onClick="search"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dbdbdb">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="热门城市"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="天津"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="北京"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="上海"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt5"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="深圳"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt6"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="成都"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt7"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="杭州"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt9"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="苏州"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt10"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="澳门"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt11"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="香港"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt13"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="三亚"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt14"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="济南"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt15"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="广州"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt16"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="沈阳"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt12"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="厦门"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt8"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="武汉"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt17"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="大连"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt18"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="南京"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt19"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="宁波"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt20"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="西安"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt21"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="重庆"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bt22"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bound"
+                    android:onClick="select"
+                    android:text="台北"
+                    android:textColor="#515151"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dbdbdb"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="更多选择"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white">
+
+                    <ImageButton
+                        android:id="@+id/more"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/white"
+                        android:src="@drawable/more" />
+                </LinearLayout>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

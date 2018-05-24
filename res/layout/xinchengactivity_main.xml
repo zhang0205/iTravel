@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_title_1">
+        <ImageButton
+            android:id="@+id/xingcheng_back"
+            android:layout_width="60dp"
+            android:background="@drawable/new_title_1"
+            android:layout_height="50dp"
+            android:src="@drawable/jindian_back"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="行程提醒"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:id="@+id/add"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:background="@drawable/button"
+            android:textSize="70sp"
+            android:text="+"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:onClick="click_add"/>
+    </RelativeLayout>
+
+</LinearLayout>

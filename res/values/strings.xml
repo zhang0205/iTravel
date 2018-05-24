@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">悠游</string>
+    <string name="month_name_format">MMMM yyyy</string>
+    <string name="day_name_format">EEE</string>
+    <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <string name="text_tts_source_en">iFLYTEK is a national key software enterprise dedicated to the research of intelligent speech and language technologies, development of software and chip products, provision of speech information services, and integration of E-government systems. The intelligent speech technology of iFLYTEK, the core technology of the company, represents the top level in the world.</string>
+    <string name="text_tts_source">科大讯飞作为中国最大的智能语音技术提供商，在智能语音技术领域有着长期的研究积累，并在中文语音合成、语音识别、口语评测等多项技术上拥有国际领先的成果。科大讯飞是我国唯一以语音技术为产业化方向的“国家863计划成果产业化基地”…</string>
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="text1">输入用户名/手机号</string>
+    <string name="text2">输入密码</string>
+    <string name="text3">忘记密码</string>
+    <string name="text4">注册</string>>
+    <string name="text5">登录</string>>
+
+    <style name="AnimTopMiddle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/top_middle_in</item>
+        <item name="android:windowExitAnimation">@anim/top_middle_out</item>
+    </style>
+
+    <style name="main_tv_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>
